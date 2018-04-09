@@ -125,6 +125,6 @@ WITHOUT_CHECK_API := true
 ANDROID_NO_TEST_CHECK := true
 
 # SELinux
-BOARD_SEPOLICY_DIRS += device/samsung/i9082/sepolicy
+#BOARD_SEPOLICY_DIRS += device/samsung/i9082/sepolicy
 
 TARGET_USES_LEGACY_ADB_INTERFACE := true
