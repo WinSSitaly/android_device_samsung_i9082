@@ -139,3 +139,9 @@ ANDROID_NO_TEST_CHECK := true
 #BOARD_SEPOLICY_DIRS += device/samsung/i9082/sepolicy
 
 TARGET_USES_LEGACY_ADB_INTERFACE := true
+
+# Shims
+TARGET_LD_SHIM_LIBS := \
+     /system/lib/hw/audio.primary.capri.so|libsamsung_symbols.so \
+     /system/vendor/lib/hw/camera.capri.so|libsamsung_symbols.so \
+     /system/lib/libtvservice_binder.so|libsamsung_symbols.so
